@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/_reset.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <!-- AOS ANIMATION SCROLL -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- CSS MIN. -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Dumet Fasina | Développeur Full-Stack</title>
+</head>
+<body>
+    <section class="content"> <!--CONTENEUR GENERAL OVERFLOW-->
+    <header id="header"> <!--CONTENEUR HEADER-->
+        <div id="home"> <!--PARTIE HAUTE HEADER-->
+                <div id="logo_header"></div> <!--LOGO PRINCIPAL-->
+                <div id="my_name"> <!--TITRE PRINCIPAL-->
+                    <h1 id="my_name">Dumet Fasina</h1>
+                </div>
+            <div id="header_down"> <!--PARTIE BASSE HEADER-->
+                <div id="subtitle"> <!--TYPEWRITER-->
+                    <h2 href="" class="typewrite" data-period="2000" data-type='["Développeur Web Full-Stack.", "Design & Création de site web."]' id="subtitle_element"></h2>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about"> <!--CONTENEUR SVG FLECHE (link-> SECTION ABOUT)-->
+            <svg class="arrows" href="#about"><!--SVG FLECHE-->
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </a>
+        <canvas id="canvas1"></canvas> <!--ANIMATION BACKGROUND WATERPIPE-->
+    </header>
+    
+    <div class="container-fluid high_res_navbar"> <!--CONTENEUR NAVBAR HAUTE RESOLUTION-->
+        <div class="row navbar"> <!--NAVBAR-->
+            <div class="col-lg-2">
+                <img src="assets/img/logo_white.png" alt="" id="logo_navbar"> <!--LOGO NAVBAR-->
+            </div>
+            <div class="col-lg-6 col-md-10 navbar_element"> <!--ANCRE LIEN NAVBAR-->
+                <ul>
+                    <a href="#header" class="navbar_link home_link"><li>Accueil</li></a>
+                    <a href="#about" class="navbar_link about_link"><li>A propos</li></a>
+                    <a href="#projects" class="navbar_link projects_link"><li>Mes projets</li></a>
+                    <a href="#contact" class="navbar_link contact_link"><li>Contact</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<div class="containter-fluid low_res_navbar"> <!--CONTENEUR NAVBAR BASSE RESOLUTION-->
+    <div class="row">
+        <div class="col-md-2 col-xs-3 img_navbar_parent">
+            <img src="assets/img/logo_white.png" alt="" id="logo_navbar"> <!--LOGO NAVBAR BASSE RESOLUTION-->
+        </div>
+        <div class="col-md-8 col-xs-6 name_navbar_parent"> <!--NOM NAVBAR BASSE RESOLUTION-->
+            <div id="my_name_navbar">
+                <h2 id="my_name_navbar_title">Dumet Fasina</h2>
+            </div>
+            <div id="sub_name_navbar">
+                <h2 id="sub_name_navbar_title">Développeur Full-Stack</h2> <!--TYPEWRITER BASSE RESOLUTION-->
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-3 menu_burger_parent"> <!--MENU BURGER BASSE RESOLUTION-->
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input id="menu_burger" type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#header"><li>Accueil</li></a>
+                        <a href="#about"><li>A propos</li></a>
+                        <a href="#projects"><li>Mes projets</li></a>
+                        <a href="#contact"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+    <section id="about"> <!--SECTION A PROPOS-->
+        <div class="section_title_container">
+            <h2 class="section_title about_title" data-aos="zoom-out-down" data-aos-delay="100" data-aos-once="true">A PROPOS</h2> <!--TITRE A PROPOS-->
+        </div>
+        <div class="container"> <!--DESCRIPTION A PROPOS-->
+            <div class="row about_elements">
+                <div class="col-lg-5" id="about_p" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="800" data-aos-once="true">
+                    <p>Hey ! Je m'appelle Dumet Fasina. Passionné dans la création de site web, je suis Développeur Full-Stack à Bordeaux.<br>  Bienvenue sur mon site !</p>
+                </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="800" data-aos-once="true">
+                <img src="assets/img/skills/skills.png" alt="" id="about_skills"> <!--COMPÉTENCES A PROPOS-->
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guarantee"> <!--SECTION GARANTIES-->
+            <div id="guarantee_title" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="200" data-aos-once="true">
+                <h3>Votre site web sera...</h3> <!--TITRE GARANTIES-->
+            </div>
+        <div class="container"> <!--CONTAINER IMAGES ET DESCRIPTION GARANTIES-->
+            <div class="row guarantee_all_element">
+                <div class="col-lg-3 guarantee_each">
+                    <img src="assets/img/guarantee/speed.png" alt="" class="logo_guarantee" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="200" data-aos-once="true"> <!--IMAGES GARANTIES-->
+                    <h4 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="200" data-aos-once="true">Rapide</h4> <!--DESCRIPTION GARANTIES-->
+                    <p class="guarantee_p" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="200" data-aos-once="true">Optimisation de la fluidité</p>
+                </div>
+                <div class="col-lg-3 guarantee_each">
+                    <img src="assets/img/guarantee/responsive.png" alt="" class="logo_guarantee" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="200" data-aos-once="true"> <!--IMAGES GARANTIES-->
+                    <h4 data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="200" data-aos-once="true">Responsive</h4> <!--DESCRIPTION GARANTIES-->
+                    <p class="guarantee_p" class="guarantee_p" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="200" data-aos-once="true">Adapté à toutes sortes d'interfaces</p>
+                </div>
+                <div class="col-lg-3 guarantee_each">
+                    <img src="assets/img/guarantee/lamp.png" alt="" class="logo_guarantee" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="200" data-aos-once="true"> <!--IMAGES GARANTIES-->
+                    <h4 data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="200" data-aos-once="true">Intuitif</h4> <!--DESCRIPTION GARANTIES-->
+                    <p class="guarantee_p" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="200" data-aos-once="true">Simple d'utilisation et ergonomique</p>
+                </div>
+                <div class="col-lg-3 guarantee_each">
+                    <img src="assets/img/guarantee/rocket.png" alt="" class="logo_guarantee" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="200" data-aos-once="true"> <!--IMAGES GARANTIES-->
+                    <h4 data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="200" data-aos-once="true">Dynamique</h4> <!--DESCRIPTION GARANTIES-->
+                    <p class="guarantee_p" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="200" data-aos-once="true">Interactif, vivant et référencement SEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects"> <!--SECTION PROJET-->
+        <div class="section_title_container" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="600" data-aos-duration="400" data-aos-once="true">
+            <h2 class="section_title">MES PROJETS</h2> <!--TITRE PROJET-->
+        </div>
+        <div class="container"> <!--CONTENEUR FLIP IMAGE PROJET-->
+            <div class="row">
+                <div class="col-lg-4 project_element_container" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" data-aos-once="true">
+                    <div class="project_element_parent"> <!--FLIP IMAGE PROJET-->
+                        <div class="projects_element projects_gamingcampus front"></div>
+                        <div class="about_back about_gaming_campus">
+                            <a href="" class="more_link_project">EN SAVOIR<br><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 project_element_container" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="600" data-aos-once="true">
+                    <div class="project_element_parent"> <!--FLIP IMAGE PROJET-->
+                        <div class="projects_element projects_leresto front"></div>
+                        <div class="about_back about_leresto">
+                            <a href="" class="more_link_project">EN SAVOIR<br><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 project_element_container" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="600" data-aos-duration="600" data-aos-once="true">
+                    <div class="project_element_parent"> <!--FLIP IMAGE PROJET-->
+                        <div class="projects_element projects_arclabs front"></div>
+                        <div class="about_back about_arclabs">
+                            <a href="" class="more_link_project">EN SAVOIR<br><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 project_element_container" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="800" data-aos-duration="600" data-aos-once="true">
+                    <div class="project_element_parent"> <!--FLIP IMAGE PROJET-->
+                        <div class="projects_element projects_tinker front"></div>
+                        <div class="about_back about_tinker">
+                            <a href="" class="more_link_project">EN SAVOIR<br><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 project_element_container" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="1000" data-aos-duration="600" data-aos-once="true">
+                    <div class="project_element_parent"> <!--FLIP IMAGE PROJET-->
+                        <div class="projects_element projects_onemillion front"></div>
+                        <div class="about_back about_onemilion">
+                            <a href="" class="more_link_project">EN SAVOIR<br><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 project_element_container" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="1200" data-aos-duration="600" data-aos-once="true">
+                    <div class="project_element_parent"> <!--FLIP IMAGE PROJET-->
+                        <div class="projects_element projects_leparisien front"></div>
+                        <div class="about_back about_leparisien">
+                            <a href="" class="more_link_project">EN SAVOIR<br><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact"> <!--SECTION CONTACT-->
+        <img src="assets/img/contact_enveloppe.png" alt="" id="enveloppe">
+        <div class="section_title_container_contact" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
+            <h2 class="section_title">CONTACT</h2> <!--TITRE CONTACT-->
+        </div>
+        <div id="form_container">
+            <form id="contact_form">
+                <div class="g-recaptcha" data-sitekey="6LfCktkUAAAAADeI2zEAN2iXoYFwDBfAq9DZ18LX">
+                    <div id="contact_form_lastname" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
+                        <input type="text" name="lastname" placeholder="Nom" class="form-field"> <!--INPUT NOM CONTACT-->
+                    </div>
+                    <div id="contact_form_firstname" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="400" data-aos-once="true">
+                        <input type="text" name="firstname" placeholder="Prénom" class="form-field"> <!--INPUT PRENOM CONTACT-->
+                    </div>
+                    <div id="contact_form_email" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="400" data-aos-once="true">
+                        <input type="email" name="email" placeholder="Email" class="form-field"> <!--INPUT EMAIL CONTACT-->
+                    </div>
+                    <div id="contact_form_msg" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="400" data-aos-once="true">
+                        <textarea type="text" name="msg" placeholder="Message" rows="5" class="form-field"></textarea> <!--TEXTAERA MESSAGE CONTACT-->
+                    </div>
+                    <div id="submit_btn_container" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="500" data-aos-duration="400" data-aos-once="true">
+                        <input type="submit" name="submit" id="btn" value="Envoyer"> <!--BOUTON SUBMIT CONTACT-->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>    
+</section>
+
+
+
+    <footer> <!--SECTION FOOTER-->
+        <a href="#header" id="link_arrow_to_top"><div id="arrow_to_top"></div></a> <!--ANCRE VERS ACCUEIL FOOTER-->
+        
+        <div id="copyright"> <!--COPYRIGHT FOOTER-->
+            <h5>Dumet Fasina<span id="copyright_2"> &copy; 2020</span></h5>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="assets/libs/jQuery/jquery-3.4.1.min.js"></script> <!--jQuery MIN-->
+    <script src="assets/libs/aos.js"></script> <!--AOS ANIM-->
+    <script src="assets/libs/waterpipe.js"></script> <!--WATERPIPE ANIM ACCUEIL-->
+    <script src="assets/libs/waterpipe2.js"></script> <!--WATERPIPE ANIM ACCUEIL-->
+    <script src="assets/libs/bootstrap.min.js"></script> <!--BOOTSTRAP MIN-->
+    <script src="assets/js/src/script.js"></script> <!--SCRIPT-->
+</body>
+</html>
